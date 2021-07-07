@@ -1,0 +1,88 @@
+{% load static %}
+{% load gravatar %}
+{% load socialaccount %}
+{% load user_score %}
+{% providers_media_js %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}Bugheist{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="{% block description %}Bugheist allows anyone to submit an issue from any website. For example if you saw a broken button on Amazon.com you can report the issue on Bugheist and then get a point! The more bugs you find the more points you get. Bugs can be verified for extra points and companies can get involved and help out.{% endblock %}">
+    <meta name="author" content="">
+    <meta property="og:title" content="{% block og_title %}Bugheist{% endblock %}" />
+    <meta property="og:image" content="{% block og_image %}{% static "img/screenshot.png" %}{% endblock %}" />
+    <meta property="og:description"
+        content="{% block og_description %}Bugheist allows anyone to submit an issue from any website. For example if you saw a broken button on Amazon.com you can report the issue on Bugheist and then get a point! The more bugs you find the more points you get. Bugs can be verified for extra points and companies can get involved and help out.{% endblock %}" />
+    <meta property="og:type" content="website" />
+    <link href="{% static "vendor/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <link href="{% static "css/lightbox.min.css" %}" rel="stylesheet">
+    <link href="{% static "vendor/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "css/animate.css" %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "css/text-slider.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "css/activity.css" %}" rel="stylesheet" type="text/css">
+    <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
+    <script src="{% static "js/notify.js" %}"></script>
+    <script src="{% static "js/text-slider.js" %}"></script>
+    <script src="{% static "js/embed.js" %}"></script>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>About BugHeist</h1>
+            <p>Software code allows us to buy a gift for Mom or Dad on amazon.com in 7 seconds, watch our favorite
+                “House of Cards” episode on Netflix or read Yelp reviews about a new restaurant.</p>
+
+            <p>When we can’t access the information we’re looking for on the internet within seconds, <i>we are not
+                happy.</i>
+            <p>
+
+            <p>This is where you come into the picture.</p>
+
+            <p>BugHeist wants you to identify the software (and hardware) bugs that delay downloads, freeze screens,
+                create payloads that deliver malware to websites and generate other issues.</p>
+
+            <h2><strong>What’s in it for you?</strong></h2>
+            <ul>
+                <li>Points.</li>
+                <li>Money if you join a BugHeist Sponsored Bug Hunt.</li>
+                <li>Jackpot money listed on the Leaderboard.</li>
+                <li>Money if someone tips you for finding a bug through the tip button.</li>
+                <li>Experience to add to your résumé or portfolio.</li>
+            </ul>
+
+            <h3><strong>How it Works</strong></h3>
+
+            <h4><strong>Testers</strong></h4>
+            <ol>
+                <li>Create a User Account to log into BugHeist.</li>
+                <li>Describe the software or hardware bug you found.</li>
+                <li>Attach a screenshot of the bug.</li>
+                <li>Submit the information.</li>
+                <li>Win money through company-sponsored Bug Hunts, tips or the Grand Prize/Jackpot.We may also have
+                    "heists" where each bug is worth a specific amount based on what the company sets.
+                </li>
+                <li>If you participate in BugHeist’s sponsored Bug Hunts, you could win prize money known as tips.</li>
+            </ol>
+
+            <h4><strong>Organizations</strong></h4>
+
+            We want everyone to love your website.
+            <p>You want to keep your customers happy by giving them a consistent bug-free user experience. BugHeist
+                offers monthly Bug Hunts through 4 different subscription plans to help you achieve this.</p>
+
+</body>
